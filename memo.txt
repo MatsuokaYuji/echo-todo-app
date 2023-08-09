@@ -1,0 +1,12 @@
+docker compose up -d
+docker ps
+go mod tidy
+GO_ENV=dev go run migrate/migrate.go
+
+
+csrf token
+
+JWT token
+
+// postmanの時はdefault
+CookieSameSite: http.SameSiteDefaultMode,
